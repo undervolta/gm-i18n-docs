@@ -1,10 +1,10 @@
 **Getting Started**  
 - [Introduction](#introduction)  
+- [Limitations](#limitations)
 - [Setup](#setup)  
     - [Requirements](#requirements)
     - [Installation](#installation)
     - [Configuration](#configuration)
-- [Limitations](#limitations)
 
 
 **Initialization**
