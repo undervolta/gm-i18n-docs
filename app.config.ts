@@ -18,7 +18,7 @@ export default defineAppConfig({
 			edit: true
 		},
 		aside: {
-			level: 0,
+			level: 1,
 			collapsed: false,
 			exclude: []
 		},
@@ -43,10 +43,10 @@ export default defineAppConfig({
 			textLinks: [
 				{
 					text: 'GM-I18n v0.1.0',
-					href: 'https://gm-i18n.lefinitas.com',
+					href: 'https://gm-i18n.lefinitas.com/v0',
 					rel: 'noopener'
 				}
-			],
+			]
 		},
 		colorMode: {
             preference: 'system', 
