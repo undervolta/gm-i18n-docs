@@ -7,12 +7,12 @@
     - [Configuration](#configuration)
 
 
-**Initialization**
+**Core Concepts**
 - [I18n System](#i18n-system)
 - [System Flow](#system-flow)
 
 
-**Essentials**
+**Usage**
 - [Messages](#messages)
     - [Static Messages](#static-messages)
     - [Dynamic Messages](#dynamic-messages)
@@ -31,18 +31,18 @@
 - [Fallback](#fallback)
 
 
-**Advanced**
-- [Nested Message Data](#nested-message-data)
-- [Dictionaries](#dictionaries)
-- [Optimizations](#optimizations)
-- [Extending & Customizing](#extending-and-customizing)
-
-
 **Examples**
 - [Real-Time Pluralization](#real-time-pluralization)
 - [Locale Switcher](#locale-switcher)
 - [Gender-based Text](#gender-based-text)
 - [Phrase Dictionaries](#phrase-dictionaries)
+
+
+**Advanced**
+- [Nested Message Data](#nested-message-data)
+- [Dictionaries](#dictionaries)
+- [Optimizations](#optimizations)
+- [Extending & Customizing](#extending-and-customizing)
 
 
 **API Reference**  
