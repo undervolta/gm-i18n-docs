@@ -88,4 +88,12 @@
     - [i18n_update_loader](#i18n_update_loader)
     - [i18n_update_plurals](#i18n_update_plurals)
     - [i18n_update_refs](#i18n_update_refs)
+        - To add:
+        - [i18n_choose](#i18n_choose)
+        - [i18n_update_fonts](#i18n_update_fonts)
+        - [i18n_update_data](#i18n_update_data)
+        - [i18n_clear_cache](#i18n_clear_cache)
+        - [i18n_get_message_from_cache](#i18n_get_message_from_cache)
+        - [i18n_load_locale](#i18n_load_locale)
+        - [i18n_unload_locale](#i18n_unload_locale)
 
