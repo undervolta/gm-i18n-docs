@@ -10,6 +10,7 @@
 **Core Concepts**
 - [I18n System](#i18n-system)
 - [System Flow](#system-flow)
+- [Fallback](#fallback)
 
 
 **Usage**
@@ -28,7 +29,6 @@
     - [Drawing Preset](#drawing-preset)
 - [Localized Assets](#localized-assets)
 - [Locale Switching](#locale-switching)
-- [Fallback](#fallback)
 
 
 **Examples**
