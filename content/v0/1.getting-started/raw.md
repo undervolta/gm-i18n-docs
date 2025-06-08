@@ -33,7 +33,6 @@
 
 **Examples**
 - [Real-Time Pluralization](#real-time-pluralization)
-- [Locale Switcher](#locale-switcher)
 - [Gender-based Text](#gender-based-text)
 - [Phrase Dictionaries](#phrase-dictionaries)
 
