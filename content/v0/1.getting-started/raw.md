@@ -31,17 +31,17 @@
 - [Locale Switching](#locale-switching)
 
 
-**Examples**
-- [Real-Time Pluralization](#real-time-pluralization)
-- [Gender-based Text](#gender-based-text)
-- [Phrase Dictionaries](#phrase-dictionaries)
-
-
 **Advanced**
 - [Nested Message Data](#nested-message-data)
 - [Dictionaries](#dictionaries)
 - [Optimizations](#optimizations)
 - [Extending & Customizing](#extending-and-customizing)
+
+
+**Examples**
+- [Real-Time Pluralization](#real-time-pluralization)
+- [Gender-based Text](#gender-based-text)
+- [Phrase Dictionaries](#phrase-dictionaries)
 
 
 **API Reference**  
