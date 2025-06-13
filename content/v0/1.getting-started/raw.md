@@ -41,7 +41,6 @@
 **Examples**
 - [Real-Time Pluralization](#real-time-pluralization)
 - [Gender-based Text](#gender-based-text)
-- [Phrase Dictionaries](#phrase-dictionaries)
 
 
 **API Reference**  
