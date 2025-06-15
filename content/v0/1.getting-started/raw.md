@@ -58,13 +58,12 @@
 - Functions
     - [i18n_add_dictionaries](#i18n_add_dictionaries)
     - [i18n_add_drawings](#i18n_add_drawings)
-    - [i18n_add_locales](#i18n_add_locale)
+    - [i18n_add_locales](#i18n_add_locales)
     - [i18n_add_messages](#i18n_add_messages)
     - [i18n_create](#i18n_create)
     - [i18n_create_ref_asset](#i18n_create_ref_asset)
     - [i18n_create_ref_message](#i18n_create_ref_message)
     - [i18n_draw_message](#i18n_draw_message)
-    - [i18n_use_drawing](#i18n_use_drawing)
     - [i18n_get_asset_from_ref](#i18n_get_asset_from_ref)
     - [i18n_get_drawings](#i18n_get_drawings)
     - [i18n_get_drawings_data](#i18n_get_drawings_data)
@@ -86,6 +85,7 @@
     - [i18n_update_loader](#i18n_update_loader)
     - [i18n_update_plurals](#i18n_update_plurals)
     - [i18n_update_refs](#i18n_update_refs)
+    - [i18n_use_drawing](#i18n_use_drawing)
         - To add:
         - [i18n_choose](#i18n_choose)
         - [i18n_update_fonts](#i18n_update_fonts)
