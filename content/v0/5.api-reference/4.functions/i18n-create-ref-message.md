@@ -144,6 +144,8 @@ switch (i18n_get_locale()) {
 ```
 ::
 
+---
+
 ::alert{type="info"}
 The `var_name` is **not** the name of the message itself. You can name the `var_name` as you want, as long as it's **unique** (no duplicated name) in the same level of the variable. <br> <br>
 

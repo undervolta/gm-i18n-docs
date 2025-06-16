@@ -1,6 +1,8 @@
 # i18n_add_drawings()
 
-The `i18n_add_drawings()` function is used to add drawing presets to the specified locale(s). This function can only be used after the `i18n_create()` function is called.
+The `i18n_add_drawings()` function is used to add drawing presets to the specified locale(s). 
+
+This function can only be used after the `i18n_create()` function is called.
 
 ## Syntax
 

@@ -1,6 +1,8 @@
 # i18n_use_drawing()
 
-The `i18n_use_drawing()` function is used to change the drawing preset used. This function can only be used after the `i18n_create()` function is called.
+The `i18n_use_drawing()` function is used to change the drawing preset used. 
+
+This function can only be used after the `i18n_create()` function is called.
 
 ## Syntax
 

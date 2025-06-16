@@ -1,6 +1,8 @@
 # i18n_add_messages()
 
-The `i18n_add_messages()` function is used to add messages to the specified locale. This function can only be used after the `i18n_create()` function is called.
+The `i18n_add_messages()` function is used to add messages to the specified locale. 
+
+This function can only be used after the `i18n_create()` function is called.
 
 ## Syntax
 

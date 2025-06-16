@@ -129,6 +129,8 @@ i18n = i18n_create("i18n", "en", [
 ]);
 ```
 
+---
+
 ::alert{type="info"}
 You can optimize the locale files loading by using the `time` option. Please read the [Chunk Loading](/v0/advanced/optimizations#chunk-loading) section for more information.
 ::

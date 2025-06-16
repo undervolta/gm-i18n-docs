@@ -1,6 +1,8 @@
 # i18n_add_dictionaries()
 
-The `i18n_add_dictionaries()` function is used to add dictionaries to the specified locale. This function can only be used after the `i18n_create()` function is called.
+The `i18n_add_dictionaries()` function is used to add dictionaries to the specified locale. 
+
+This function can only be used after the `i18n_create()` function is called.
 
 ## Syntax
 

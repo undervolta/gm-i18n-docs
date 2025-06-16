@@ -137,6 +137,8 @@ i18n_draw_message(100, 50, "@:dialog.npc_1", [
 ```
 ::
 
+---
+
 ::alert{type="info"}
 For the detailed example of this function, you can see the [Drawing](/v0/usage/drawing#direct-drawing) section.
 ::

@@ -1,6 +1,8 @@
 # i18n_add_locales()
 
-The `i18n_add_locales()` function is used to add new locales to the **GM-I18n** system. This function can only be used after the `i18n_create()` function is called.
+The `i18n_add_locales()` function is used to add new locales to the **GM-I18n** system with empty data.
+
+This function can only be used after the `i18n_create()` function is called.
 
 ## Syntax
 

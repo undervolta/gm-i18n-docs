@@ -129,6 +129,8 @@ draw_sprite_ext(my_struct.my_spr, 0, 100, 200, 1, 1, 0, c_white, 1);
 ```
 ::
 
+---
+
 ::alert{type="info"}
 The `var_name` is **not** the name of the asset itself. You can name the `var_name` as you want, as long as it's **unique** (no duplicated name) in the same level of the variable.
 ::
