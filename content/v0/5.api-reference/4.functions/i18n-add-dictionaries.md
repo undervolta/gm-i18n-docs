@@ -2,7 +2,7 @@
 
 The `i18n_add_dictionaries()` function is used to add dictionaries to the specified locale. 
 
-This function can only be used after the `i18n_create()` function is called.
+This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -11,7 +11,7 @@ This function can only be used after the `i18n_create()` function is called.
 i18n_add_dictionaries(locale, data, [i18n]);
 ```
 
-```js [Signature]
+```ts [Signature]
 function i18n_add_dictionaries(
     locale: string,
     data: [string, string] | [string, string][],    // [key, value] or [[key1, value1], [key2, value2], ...]
@@ -26,7 +26,7 @@ function i18n_add_dictionaries(
 |-------------|-------------------|--------------|-------------|
 | locale      | String            |              | The locale to add the dictionaries to (e.g. `en`, `id`, `ja`, etc.). |
 | data        | \[String, String] \| \[String, String]\[]           |              | The dictionaries to add with \["key", value] pair, or array of \["key", value] pair (e.g. `["apple", "apel"]` or `[["apple", "apel"], ["banana", "pisang"], ["orange", "jeruk"]]`). |
-| i18n        | Boolean \| I18n | `false`      | The `i18n` struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 
@@ -35,7 +35,10 @@ function i18n_add_dictionaries(
 ## Examples
 
 ```js [Create Event]
-i18n_add_dictionaries("id", ["apple", "apel"]);     // add "apple" -> "apel" dictionary to "id" locale
+// assume the system is initialized on global variable
+
+// add "apple" -> "apel" dictionary to "id" locale
+i18n_add_dictionaries("id", ["apple", "apel"]); 
 
 // add more dictionaries to "id" locale
 i18n_add_dictionaries("id", [

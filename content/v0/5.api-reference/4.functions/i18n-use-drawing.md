@@ -2,7 +2,7 @@
 
 The `i18n_use_drawing()` function is used to change the drawing preset used. 
 
-This function can only be used after the `i18n_create()` function is called.
+This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -26,11 +26,11 @@ function i18n_use_drawing(
 |-------------|-------------------|--------------|-------------|
 | preset_name | String            |              | The name of the drawing preset to use (e.g. `header`, `body`, `title`, etc.). |
 | locale      | String            | `""`         | The locale code to use the drawing preset (e.g. `en`, `id`, `ja`, etc.). Leave it empty to mark it as `dynamic` locale. |
-| i18n        | Boolean \| I18n | `false`      | The `i18n` struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 
-> `I18nDrawings` or `Void` (if the drawing preset is not found)
+> [`I18nDrawings`](/v0/api-reference/constructors#i18ndrawings) or `Void` (if the drawing preset is not found)
 
 ## Examples
 

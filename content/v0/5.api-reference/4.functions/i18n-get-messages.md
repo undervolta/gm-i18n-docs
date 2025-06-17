@@ -2,7 +2,7 @@
 
 The `i18n_get_messages()` function is used to get the localized message from the **GM-I18n** system.
 
-This function can only be used after the `i18n_create()` function is called.
+This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -26,9 +26,9 @@ function i18n_get_messages(
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
 | key         | String \| String\[] |              | The message key(s) to get (e.g. `hello`, `bye`, `long_text`, etc.). You can pass a string for single message, or an array of string for multiple messages (e.g. `["hello", "bye", "long_text"]`). |
-| data        | Integer \| Any\[] \| Struct | `undefined`  | The data to pass to the message [pluralization](/v0/usage/pluralization) (`Integer`), [indexed interpolation](/v0/usage/interpolation#indexed-data) (`Any[]`), or [named interpolation](/v0/usage/interpolation#named-data) (`Struct`). |
+| data        | Integer \| Any\[] \| Struct | `undefined`  | The data to pass to the message, whether it's for [pluralization](/v0/usage/pluralization) (`Integer`), [indexed interpolation](/v0/usage/interpolation#indexed-data) (`Any[]`), or [named interpolation](/v0/usage/interpolation#named-data) (`Struct`). |
 | locale      | String            | `""`         | The locale code to get the message from (e.g. `en`, `id`, `ja`, etc.). Leave it empty to get the message from the **current locale**. |
-| i18n        | Boolean \| I18n | `false`      | The `i18n` struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

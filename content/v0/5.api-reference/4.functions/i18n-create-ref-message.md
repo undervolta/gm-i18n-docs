@@ -1,8 +1,8 @@
 # i18n_create_ref_message()
 
-The `i18n_create_ref_message()` function is used to create a reference to the localized message. This reference will automatically update itself when the locale is changed by calling `i18n_set_locale()` function.
+The `i18n_create_ref_message()` function is used to create a reference to the localized message. This reference will automatically update itself when the locale is changed by calling [`i18n_set_locale()`](/v0/api-reference/functions/i18n-set-locale) function.
 
-This function can only be used after the `i18n_create()` function is called.
+This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -28,7 +28,7 @@ function i18n_create_ref_message(
 | var_name     | String            |              | The name of the variable that will store the message reference. The `var_name` can be in any level of the instance variable or global variable (e.g. `global.my_obj.my_msg`, `my_obj.my_msg`, `my_arr.0`, `my_struct.my_msg`, etc.). |
 | key          | String            |              | The message key you want to reference (e.g. `hello`, `button.text`, `menu.help.about`, etc.). |
 | data         | Real \| Array \| Struct | `undefined` | The data to pass to the message. You can pass an integer for pluralization, an array for indexed data interpolation, or a struct for named data interpolation (e.g. `1`, `["Hello", "World"]`, `{ name: "John" }`). |
-| i18n         | Boolean \| I18n | `false`      | The `i18n` struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n         | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

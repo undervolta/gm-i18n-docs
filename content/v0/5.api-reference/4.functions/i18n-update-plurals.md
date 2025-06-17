@@ -2,7 +2,7 @@
 
 The `i18n_update_plurals()` function is used to update the plural value and the used plural form in the message reference created by using the `i18n_create_ref_message()` function.
 
-This function can only be used after the `i18n_create()` function is called.
+This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -25,10 +25,10 @@ function i18n_update_plurals(
 
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
-| var_name    | String            |              | The name of the variable that store the message reference created by `i18n_create_ref_message()` function (e.g. `global.my_obj.my_msg`, `my_obj.my_msg`, `my_arr.0`, `my_struct.my_msg`, etc.). |
+| var_name    | String            |              | The name of the variable that store the message reference created by [`i18n_create_ref_message()`](/v0/api-reference/functions/i18n-create-ref-message) function (e.g. `global.my_obj.my_msg`, `my_obj.my_msg`, `my_arr.0`, `my_struct.my_msg`, etc.). |
 | value       | Real              |              | The new plural value (e.g. `0`, `10`, `213`, etc.). |
 | update_refs | Boolean           | `false`      | Update all references (message and asset) to the new plural value and the used plural form. |
-| i18n        | Boolean \| I18n | `false`      | The `i18n` struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

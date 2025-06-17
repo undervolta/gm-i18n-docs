@@ -2,7 +2,7 @@
 
 The `i18n_add_messages()` function is used to add messages to the specified locale. 
 
-This function can only be used after the `i18n_create()` function is called.
+This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -28,7 +28,7 @@ function i18n_add_messages(
 |-------------|-------------------|--------------|-------------|
 | locale      | String            |              | The locale to add the messages to (e.g. `en`, `id`, `ja`, etc.). |
 | data        | Struct            |              | The messages to add. The `key` is the message key, and the `value` is the message value (e.g. `{ hello: "Hello World!" }`). |
-| i18n        | Boolean \| I18n | `false`      | The `i18n` struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

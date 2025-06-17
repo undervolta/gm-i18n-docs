@@ -2,7 +2,7 @@
 
 The `i18n_update_loader()` function is used to update the loader function used by the **GM-I18n** system to load the initial locale files.
 
-This function can only be used after the `i18n_create()` function is called.
+This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -24,7 +24,7 @@ function i18n_update_loader(
 | Name           | Type              | Default      | Description |
 |----------------|-------------------|--------------|-------------|
 | use_delta_time | Boolean           | `false`      | Use delta time to update the loader. |
-| i18n           | Boolean \| I18n | `false`      | The `i18n` struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n           | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 
