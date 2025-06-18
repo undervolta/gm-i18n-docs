@@ -15,7 +15,7 @@ i18n_add_messages(locale, data, [i18n]);
 function i18n_add_messages(
     locale: string,
     data: { 
-        [key: string]: string 
+        [key: string]: string; 
     },
     i18n?: I18n | boolean         // default = false (using global i18n struct)
 ): void

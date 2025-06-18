@@ -14,7 +14,7 @@ i18n_update_drawings(preset_name, data, [locale], [i18n]);
 ```ts [Signature]
 function i18n_update_drawings(
     preset_name: string,
-    data: [string, (number | Font)] | [string, (number | Font)][] | [key: string]: (number | Font),
+    data: [string, (number | Font)] | [string, (number | Font)][] | { [key: string]: (number | Font); },
     locale?: string,                // default = "" (use the current locale)
     i18n?: I18n | boolean           // default = false (using global i18n struct)
 ): void

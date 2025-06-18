@@ -14,7 +14,7 @@ i18n_create_ref_asset(var_name, locale_asset, [i18n]);
 ```ts [Signature]
 function i18n_create_ref_asset(
     var_name: string,
-    locale_asset: { [locale_code: string]: Asset },
+    locale_asset: { [locale_code: string]: Asset; },
     i18n?: I18n | boolean                           // default = false (using global i18n struct)
 ): Asset
 ```

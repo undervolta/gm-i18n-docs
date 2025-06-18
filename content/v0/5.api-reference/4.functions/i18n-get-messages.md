@@ -14,7 +14,7 @@ i18n_get_messages(key, [data], [locale], [i18n]);
 ```ts [Signature]
 function i18n_get_messages(
     key: string | string[],
-    data?: number | any[] | { [key: string]: any },
+    data?: number | any[] | { [key: string]: any; },
     locale?: string,                // default = "" (use the current locale)
     i18n?: I18n | boolean           // default = false (using global i18n struct)
 ): string | string[]

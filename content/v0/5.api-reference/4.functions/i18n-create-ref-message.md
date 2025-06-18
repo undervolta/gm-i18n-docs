@@ -15,7 +15,7 @@ i18n_create_ref_message(var_name, key, [data], [i18n]);
 function i18n_create_ref_message(
     var_name: string,
     key: string,
-    data?: number | any[] | { [key: string]: any },
+    data?: number | any[] | { [key: string]: any; },
     i18n?: I18n | boolean                           // default = false (using global i18n struct)
 ): string
 ```
