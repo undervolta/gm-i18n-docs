@@ -1,6 +1,6 @@
 # GM-I18n Documentation
 
-Welcome to the **GM-I18n** documentation project! This project uses [Docus](https://docus.dev) to generate beautiful documentation for the GM-I18n internationalization library.
+Welcome to the **GM-I18n** documentation project! This project uses [Docus](https://www.docus.dev/) to generate cool documentation for the **GM-I18n** library.
 
 ## 🚀 Contributing
 
@@ -109,9 +109,9 @@ gm-i18n-docs/
 
 ### Deployment
 
-You don't need to deploy the documentation. Just make changes and create a pull request, and I will deploy it automatically.
+You don't need to deploy the documentation. Just make changes and create a pull request, and I will handle the rest.
 
-## 🛠️ Troubleshooting
+<!-- ## 🛠️ Troubleshooting
 
 ### Common Issues
 
@@ -123,7 +123,7 @@ You don't need to deploy the documentation. Just make changes and create a pull 
 
 - Check the [Docus documentation](https://docus.dev)
 - Review [Nuxt 3 documentation](https://nuxt.com)
-- Open an issue in this repository for project-specific problems
+- Open an issue in this repository for project-specific problems -->
 
 ## 📄 License
 

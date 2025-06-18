@@ -36,13 +36,13 @@ export default defineAppConfig({
 			credits: {
 				icon: 'IconDocus',
 				text: 'Powered by Docus',
-				href: 'https://docus.dev',
+				href: 'https://www.docus.dev/',
 				target: '_blank',
 				rel: 'noopener'
 			},
 			textLinks: [
 				{
-					text: 'GM-I18n v0.1.0',
+					text: 'GM-I18n v0.1.1',
 					href: 'https://gm-i18n.lefinitas.com/v0',
 					rel: 'noopener'
 				}
