@@ -42,8 +42,8 @@ export default defineAppConfig({
 			},
 			textLinks: [
 				{
-					text: 'GM-I18n v0.1.1',
-					href: 'https://gm-i18n.lefinitas.com/v0',
+					text: 'GM-I18n v1.0.0',
+					href: 'https://gm-i18n.lefinitas.com/v1/',
 					rel: 'noopener'
 				}
 			]
