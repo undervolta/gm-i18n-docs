@@ -2,7 +2,7 @@
 
 The `i18n_get_drawing_preset()` function is used to get the all of the drawing presets name from the specified locale.
 
-This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
+This function can only be used after the [`i18n_create()`](/v1/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -24,7 +24,7 @@ function i18n_get_drawing_preset(
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
 | locale      | String            | `""`         | The locale code to get the drawing preset(s) from (e.g. `en`, `id`, `ja`, etc.). Leave it empty to get the drawing preset(s) from the **current locale**. |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

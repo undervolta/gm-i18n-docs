@@ -1,8 +1,8 @@
 # i18n_update_drawings()
 
-The `i18n_update_drawings()` function is used to update the drawing preset properties used by the [`i18n_draw_message()`](/v0/api-reference/functions/i18n-draw-message) function. 
+The `i18n_update_drawings()` function is used to update the drawing preset properties used by the [`i18n_draw_message()`](/v1/api-reference/functions/i18n-draw-message) function. 
 
-This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
+This function can only be used after the [`i18n_create()`](/v1/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -26,9 +26,9 @@ function i18n_update_drawings(
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
 | preset_name | String            |              | The name of the drawing preset to update (e.g. `header`, `body`, `title`, etc.). |
-| data        | \[String, Real \| Font] \| \[String, Real \| Font]\[] \| Struct |  | The data to update the drawing preset with. You can pass a single \[key, value] pair, an array of \[key, value] pair, or a struct with `{ key: value }` pair. See the [I18N_DRAWING](/v0/api-reference/constructors#i18ndrawings) interface for the list of available keys. |
+| data        | \[String, Real \| Font] \| \[String, Real \| Font]\[] \| Struct |  | The data to update the drawing preset with. You can pass a single \[key, value] pair, an array of \[key, value] pair, or a struct with `{ key: value }` pair. See the [I18N_DRAWING](/v1/api-reference/constructors#i18ndrawings) interface for the list of available keys. |
 | locale      | String            | `""`         | The locale code to update the drawing preset. Leave it empty to update the drawing preset for all locales. |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

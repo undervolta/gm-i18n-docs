@@ -2,7 +2,7 @@
 
 The `i18n_get_drawings()` function is used to get the drawing preset(s) struct from the specified locale. 
 
-This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
+This function can only be used after the [`i18n_create()`](/v1/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -26,11 +26,11 @@ function i18n_get_drawings(
 |-------------|-------------------|--------------|-------------|
 | preset_name | String \| String\[] |              | The name of the drawing preset(s) to get (e.g. `header`, `body`, `title`, etc.). You can pass a string for single preset, or an array of string for multiple presets (e.g. `["header", "body", "title"]`). |
 | locale      | String            | `""`         | The locale code to get the drawing preset(s) from (e.g. `en`, `id`, `ja`, etc.). Leave it empty to get the drawing preset(s) from the **current locale**. |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 
-> [`I18nDrawings`](/v0/api-reference/constructors#i18ndrawings) or [`I18nDrawings[]`](/v0/api-reference/constructors#i18ndrawings)
+> [`I18nDrawings`](/v1/api-reference/constructors#i18ndrawings) or [`I18nDrawings[]`](/v1/api-reference/constructors#i18ndrawings)
 
 ## Examples
 
@@ -51,9 +51,9 @@ var body_button_id = i18n_get_drawings(["body", "button"], "id");
 ---
 
 ::alert{type="info"}
-If you pass non-existing locale code, this function will return empty [`I18nDrawings`](/v0/api-reference/constructors#i18ndrawings) struct. <br> <br>
+If you pass non-existing locale code, this function will return empty [`I18nDrawings`](/v1/api-reference/constructors#i18ndrawings) struct. <br> <br>
 
-If you pass non-existing drawing preset name in current locale, the system will check the preset name in the fallback locale. If it's still not found, it will return empty [`I18nDrawings`](/v0/api-reference/constructors#i18ndrawings) struct.
+If you pass non-existing drawing preset name in current locale, the system will check the preset name in the fallback locale. If it's still not found, it will return empty [`I18nDrawings`](/v1/api-reference/constructors#i18ndrawings) struct.
 ::
 
 ::alert{type="warning"}

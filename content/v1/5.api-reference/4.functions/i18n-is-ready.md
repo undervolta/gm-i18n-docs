@@ -2,7 +2,7 @@
 
 The `i18n_is_ready()` function is used to check if the **GM-I18n** system already load all of the initialized locale files.
 
-This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
+This function can only be used after the [`i18n_create()`](/v1/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ function i18n_is_ready(
 
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

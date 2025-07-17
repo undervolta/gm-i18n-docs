@@ -1,8 +1,8 @@
 # i18n_get_locales()
 
-The `i18n_get_locales()` function is used to get the all of the initialized locales in the **GM-I18n** system by using [`I18nLocaleInit`](/v0/api-reference/constructors#i18nlocaleinit) struct.
+The `i18n_get_locales()` function is used to get the all of the initialized locales in the **GM-I18n** system by using [`I18nLocaleInit`](/v1/api-reference/constructors#i18nlocaleinit) struct.
 
-This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
+This function can only be used after the [`i18n_create()`](/v1/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -22,11 +22,11 @@ function i18n_get_locales(
 
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 
-> [`I18nLocaleInit[]`](/v0/api-reference/constructors#i18nlocaleinit)
+> [`I18nLocaleInit[]`](/v1/api-reference/constructors#i18nlocaleinit)
 
 ## Examples
 
@@ -40,7 +40,7 @@ var init_locales = i18n_get_locales();
 ---
 
 ::alert{type="info"}
-The returned [`I18nLocaleInit`](/v0/api-reference/constructors#i18nlocaleinit) struct contains the `code`, `name`, and `file` property. So, if you want to get the locale code, you can use `init_locales[0].code`, and so on, or just use [`i18n_get_locales_code()`](/v0/api-reference/functions/i18n-get-locales-code) function instead.
+The returned [`I18nLocaleInit`](/v1/api-reference/constructors#i18nlocaleinit) struct contains the `code`, `name`, and `file` property. So, if you want to get the locale code, you can use `init_locales[0].code`, and so on, or just use [`i18n_get_locales_code()`](/v1/api-reference/functions/i18n-get-locales-code) function instead.
 ::
 
 ::alert{type="warning"}

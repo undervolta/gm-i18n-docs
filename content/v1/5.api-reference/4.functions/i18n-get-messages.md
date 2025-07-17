@@ -2,21 +2,24 @@
 
 The `i18n_get_messages()` function is used to get the localized message from the **GM-I18n** system.
 
-This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
+This function can only be used after the [`i18n_create()`](/v1/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
 ::code-group
 ```js [Usage]
-i18n_get_messages(key, [data], [locale], [i18n]);
+i18n_get_messages(key, [data], [locale], [i18n], [create_cache]);
 ```
 
 ```ts [Signature]
 function i18n_get_messages(
     key: string | string[],
-    data?: number | any[] | { [key: string]: any; },
+    data?: number | any[] | { 
+        [key: string]: any; 
+    },
     locale?: string,                // default = "" (use the current locale)
-    i18n?: I18n | boolean           // default = false (using global i18n struct)
+    i18n?: I18n | boolean,          // default = false (using global i18n struct)
+    create_cache?: boolean          // default = false (INTERNAL USE ONLY, create message cache)
 ): string | string[]
 ```
 ::
@@ -26,9 +29,10 @@ function i18n_get_messages(
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
 | key         | String \| String\[] |              | The message key(s) to get (e.g. `hello`, `bye`, `long_text`, etc.). You can pass a string for single message, or an array of string for multiple messages (e.g. `["hello", "bye", "long_text"]`). |
-| data        | Integer \| Any\[] \| Struct | `undefined`  | The data to pass to the message, whether it's for [pluralization](/v0/usage/pluralization) (`Integer`), [indexed interpolation](/v0/usage/interpolation#indexed-data) (`Any[]`), or [named interpolation](/v0/usage/interpolation#named-data) (`Struct`). |
+| data        | Integer \| Any\[] \| Struct | `undefined`  | The data to pass to the message, whether it's for [pluralization](/v1/usage/pluralization) (`Integer`), [indexed interpolation](/v1/usage/interpolation#indexed-data) (`Any[]`), or [named interpolation](/v1/usage/interpolation#named-data) (`Struct`). |
 | locale      | String            | `""`         | The locale code to get the message from (e.g. `en`, `id`, `ja`, etc.). Leave it empty to get the message from the **current locale**. |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| create_cache | Boolean           | `false`      | **(INTERNAL USE ONLY)** &nbsp; Create a message cache for this message. |
 
 ## Returns
 
@@ -114,5 +118,5 @@ You can pass an array of keys to the `key` parameter to get multiple messages at
 
 If you pass a data to the `data` parameter and you pass an array of keys to the `key` parameter, the data will be **applied to all of the messages**. <br> <br>
 
-For the detailed usage of this function, you can see the [Messages](/v0/usage/messages), [Interpolation](/v0/usage/interpolation), and [Pluralization](/v0/usage/pluralization) section.
+For the detailed usage of this function, you can see the [Messages](/v1/usage/messages), [Interpolation](/v1/usage/interpolation), and [Pluralization](/v1/usage/pluralization) section.
 ::

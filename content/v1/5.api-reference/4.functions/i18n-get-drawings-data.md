@@ -2,7 +2,7 @@
 
 The `i18n_get_drawings_data()` function is used to get the specific data from the drawing preset.
 
-This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
+This function can only be used after the [`i18n_create()`](/v1/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -26,9 +26,9 @@ function i18n_get_drawings_data(
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
 | preset_name | String            |              | The name of the drawing preset to get the data from (e.g. `header`, `body`, `title`, etc.). |
-| type        | I18N_DRAWING      |              | The type of data to get from the drawing preset (e.g. `I18N_DRAWING.FONT`, `I18N_DRAWING.SEP`, etc.). See the [I18N_DRAWING](/v0/api-reference/constants#i18n_drawing) constant for the list of available types. |
+| type        | I18N_DRAWING      |              | The type of data to get from the drawing preset (e.g. `I18N_DRAWING.FONT`, `I18N_DRAWING.SEP`, etc.). See the [I18N_DRAWING](/v1/api-reference/constants#i18n_drawing) constant for the list of available types. |
 | locale      | String            | `""`         | The locale code to get the drawing preset from (e.g. `en`, `id`, `ja`, etc.). Leave it empty to get the drawing preset from the **current locale**. |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

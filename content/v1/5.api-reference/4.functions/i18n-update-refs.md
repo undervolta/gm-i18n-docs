@@ -1,8 +1,8 @@
 # i18n_update_refs()
 
-The `i18n_update_refs()` function is used to update all references (message and asset) to the current locale. This function is automatically called when you change the locale using the [`i18n_set_locale()`](/v0/api-reference/functions/i18n-set-locale) function.
+The `i18n_update_refs()` function is used to update all references (message and asset) to the current locale. This function is automatically called when you change the locale using the [`i18n_set_locale()`](/v1/api-reference/functions/i18n-set-locale) function.
 
-This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
+This function can only be used after the [`i18n_create()`](/v1/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -23,8 +23,8 @@ function i18n_update_refs(
 
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
-| type        | I18N_REF          | `I18N_REF.ALL` | The type of reference to update. You can use the [`I18N_REF`](/v0/api-reference/constants#i18n_ref) constants to specify the type of reference you want to update (e.g. `I18N_REF.MESSAGES`, `I18N_REF.ASSETS`, `I18N_REF.ALL`). |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| type        | I18N_REF          | `I18N_REF.ALL` | The type of reference to update. You can use the [`I18N_REF`](/v1/api-reference/constants#i18n_ref) constants to specify the type of reference you want to update (e.g. `I18N_REF.MESSAGES`, `I18N_REF.ASSETS`, `I18N_REF.ALL`). |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

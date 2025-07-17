@@ -82,7 +82,7 @@ interface I18n {
 |----------------|-------------------|--------------|-------------|
 | var_name       | String            |              | The name of the variable to store the i18n system (e.g. `global.i18n`). Use `global` keyword if you want to store it in global variable. |
 | default_locale | String            |              | The default locale code to use (e.g. `en`, `id`, `ja`, etc.). |
-| locales        | I18nLocaleInit\[] |              | The array of [`I18nLocaleInit`](/v0/api-reference/constructors#i18nlocaleinit) struct to initialize the available locales. |
+| locales        | I18nLocaleInit\[] |              | The array of [`I18nLocaleInit`](/v1/api-reference/constructors#i18nlocaleinit) struct to initialize the available locales. |
 | options        | Boolean \| Struct | `false`      | The options to configure the i18n system. You can pass your desired options as a struct (e.g. `{ debug: true, default_message: "N/A" }`). |
 
 ## Returns
@@ -121,9 +121,9 @@ i18n = i18n_create("i18n", "en", [
 ---
 
 ::alert{type="info"}
-The `i18n_create()` function will automatically set the [`global.i18n_name`](/v0/api-reference/global-variables#i18n_name) variable to the name of the i18n system you created. You can use this variable to access the i18n system from anywhere in your game. <br> <br>
+The `i18n_create()` function will automatically set the [`global.i18n_name`](/v1/api-reference/global-variables#i18n_name) variable to the name of the i18n system you created. You can use this variable to access the i18n system from anywhere in your game. <br> <br>
 
-You can optimize the locale files loading by using the `time` option. Please read the [Chunk Loading](/v0/advanced/optimizations#chunk-loading) section for more information.
+You can optimize the locale files loading by using the `time` option. Please read the [Chunk Loading](/v1/advanced/optimizations#chunk-loading) section for more information.
 ::
 
 ::alert{type="warning"}

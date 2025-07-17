@@ -2,7 +2,7 @@
 
 The `i18n_update_plurals()` function is used to update the plural value and the used plural form in the message reference created by using the `i18n_create_ref_message()` function.
 
-This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
+This function can only be used after the [`i18n_create()`](/v1/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -25,10 +25,10 @@ function i18n_update_plurals(
 
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
-| var_name    | String            |              | The name of the variable that store the message reference created by [`i18n_create_ref_message()`](/v0/api-reference/functions/i18n-create-ref-message) function (e.g. `global.my_obj.my_msg`, `my_obj.my_msg`, `my_arr.0`, `my_struct.my_msg`, etc.). |
+| var_name    | String            |              | The name of the variable that store the message reference created by [`i18n_create_ref_message()`](/v1/api-reference/functions/i18n-create-ref-message) function (e.g. `global.my_obj.my_msg`, `my_obj.my_msg`, `my_arr.0`, `my_struct.my_msg`, etc.). |
 | value       | Real              |              | The new plural value (e.g. `0`, `10`, `213`, etc.). |
 | update_refs | Boolean           | `false`      | Update all references (message and asset) to the new plural value and the used plural form. |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 
@@ -102,9 +102,9 @@ i18n_update_plurals("ref_msg", apple_count, true);
 ---
 
 ::alert{type="info"}
-For the detailed example of this function, you can see the [Pluralization](/v0/usage/pluralization#using-message-reference) section.
+For the detailed example of this function, you can see the [Pluralization](/v1/usage/pluralization#using-message-reference) section.
 ::
 
 ::alert{type="warning"}
-You **need** to use named data for pluralization, with `plural` (for the pluralization rule) and `plural_value` (for the value to be passed to the pluralization rule) key. You **can't** use the indexed data for pluralization. See the [Interpolation](/v0/usage/interpolation) section for more information.
+You **need** to use named data for pluralization, with `plural` (for the pluralization rule) and `plural_value` (for the value to be passed to the pluralization rule) key. You **can't** use the indexed data for pluralization. See the [Interpolation](/v1/usage/interpolation) section for more information.
 ::

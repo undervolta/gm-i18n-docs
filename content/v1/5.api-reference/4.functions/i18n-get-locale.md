@@ -2,7 +2,7 @@
 
 The `i18n_get_locale()` function is used to get the current locale code used by the **GM-I18n** system.
 
-This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
+This function can only be used after the [`i18n_create()`](/v1/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ function i18n_get_locale(
 
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

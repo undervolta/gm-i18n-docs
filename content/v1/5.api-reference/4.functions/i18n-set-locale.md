@@ -2,7 +2,7 @@
 
 The `i18n_set_locale()` function is used to change the current locale used by the **GM-I18n** system.
 
-This function can only be used after the [`i18n_create()`](/v0/api-reference/functions/i18n-create) function is called.
+This function can only be used after the [`i18n_create()`](/v1/api-reference/functions/i18n-create) function is called.
 
 ## Syntax
 
@@ -26,7 +26,7 @@ function i18n_set_locale(
 |-------------|-------------------|--------------|-------------|
 | code        | String            |              | The locale code to switch to. |
 | update_refs | Boolean           | `true`       | Update all references (message and asset) to the new locale. |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v0/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 
