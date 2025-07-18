@@ -24,7 +24,7 @@ function i18n_locale_exists(
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
 | locale      | String            |              | The locale code to check (e.g. `en`, `id`, `ja`, etc.). |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

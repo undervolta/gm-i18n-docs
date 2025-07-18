@@ -31,7 +31,7 @@ function i18n_get_messages(
 | key         | String \| String\[] |              | The message key(s) to get (e.g. `hello`, `bye`, `long_text`, etc.). You can pass a string for single message, or an array of string for multiple messages (e.g. `["hello", "bye", "long_text"]`). |
 | data        | Integer \| Any\[] \| Struct | `undefined`  | The data to pass to the message, whether it's for [pluralization](/v1/usage/pluralization) (`Integer`), [indexed interpolation](/v1/usage/interpolation#indexed-data) (`Any[]`), or [named interpolation](/v1/usage/interpolation#named-data) (`Struct`). |
 | locale      | String            | `""`         | The locale code to get the message from (e.g. `en`, `id`, `ja`, etc.). Leave it empty to get the message from the **current locale**. |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 | create_cache | Boolean           | `false`      | **(INTERNAL USE ONLY)** &nbsp; Create a message cache for this message. |
 
 ## Returns

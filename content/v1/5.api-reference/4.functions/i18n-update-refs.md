@@ -24,7 +24,7 @@ function i18n_update_refs(
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
 | type        | I18N_REF          | `I18N_REF.ALL` | The type of reference to update. You can use the [`I18N_REF`](/v1/api-reference/constants#i18n_ref) constants to specify the type of reference you want to update (e.g. `I18N_REF.MESSAGES`, `I18N_REF.ASSETS`, `I18N_REF.ALL`). |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

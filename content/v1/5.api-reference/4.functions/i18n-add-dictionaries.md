@@ -26,7 +26,7 @@ function i18n_add_dictionaries(
 |-------------|-------------------|--------------|-------------|
 | locale      | String            |              | The locale to add the dictionaries to (e.g. `en`, `id`, `ja`, etc.). |
 | data        | \[String, String] \| \[String, String]\[]           |              | The dictionaries to add with \["key", value] pair, or array of \["key", value] pair (e.g. `["apple", "apel"]` or `[["apple", "apel"], ["banana", "pisang"], ["orange", "jeruk"]]`). |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

@@ -14,7 +14,9 @@ i18n_update_drawings(preset_name, data, [locale], [i18n]);
 ```ts [Signature]
 function i18n_update_drawings(
     preset_name: string,
-    data: [string, (number | Font)] | [string, (number | Font)][] | { [key: string]: (number | Font); },
+    data: [string, (number | Font)] | [string, (number | Font)][] | {
+		[key: string]: number | Font
+	},
     locale?: string,                // default = "" (use the current locale)
     i18n?: I18n | boolean           // default = false (using global i18n struct)
 ): void
@@ -28,7 +30,7 @@ function i18n_update_drawings(
 | preset_name | String            |              | The name of the drawing preset to update (e.g. `header`, `body`, `title`, etc.). |
 | data        | \[String, Real \| Font] \| \[String, Real \| Font]\[] \| Struct |  | The data to update the drawing preset with. You can pass a single \[key, value] pair, an array of \[key, value] pair, or a struct with `{ key: value }` pair. See the [I18N_DRAWING](/v1/api-reference/constructors#i18ndrawings) interface for the list of available keys. |
 | locale      | String            | `""`         | The locale code to update the drawing preset. Leave it empty to update the drawing preset for all locales. |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

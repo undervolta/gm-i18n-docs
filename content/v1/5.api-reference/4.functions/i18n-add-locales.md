@@ -24,7 +24,7 @@ function i18n_add_locales(
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
 | code        | String \| String\[] |              | The locale code(s) to add (e.g. `en`, `id`, `ja`, etc.). You can pass a string for single locale, or an array of string for multiple locales (e.g. `["en", "id", "ja"]`). |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

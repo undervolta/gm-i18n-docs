@@ -28,7 +28,7 @@ function i18n_update_plurals(
 | var_name    | String            |              | The name of the variable that store the message reference created by [`i18n_create_ref_message()`](/v1/api-reference/functions/i18n-create-ref-message) function (e.g. `global.my_obj.my_msg`, `my_obj.my_msg`, `my_arr.0`, `my_struct.my_msg`, etc.). |
 | value       | Real              |              | The new plural value (e.g. `0`, `10`, `213`, etc.). |
 | update_refs | Boolean           | `false`      | Update all references (message and asset) to the new plural value and the used plural form. |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

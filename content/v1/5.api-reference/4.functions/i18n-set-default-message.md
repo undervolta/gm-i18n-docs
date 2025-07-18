@@ -23,8 +23,8 @@ function i18n_set_default_message(
 
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
-| message     | String            |              | The default message to be returned. |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| message     | String            |              | The default message to be returned if the message key is not found in the specified locale and fallback locale. |
+| i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

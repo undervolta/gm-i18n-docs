@@ -15,7 +15,9 @@ i18n_create_ref_message(var_name, key, [data], [i18n]);
 function i18n_create_ref_message(
     var_name: string,
     key: string,
-    data?: number | any[] | { [key: string]: any; },
+    data?: number | any[] | { 
+        [key: string]: string; 
+    },
     i18n?: I18n | boolean                           // default = false (using global i18n struct)
 ): string
 ```
@@ -28,7 +30,7 @@ function i18n_create_ref_message(
 | var_name     | String            |              | The name of the variable that will store the message reference. The `var_name` can be in any level of the instance variable or global variable (e.g. `global.my_obj.my_msg`, `my_obj.my_msg`, `my_arr.0`, `my_struct.my_msg`, etc.). |
 | key          | String            |              | The message key you want to reference (e.g. `hello`, `button.text`, `menu.help.about`, etc.). |
 | data         | Real \| Array \| Struct | `undefined` | The data to pass to the message. You can pass an integer for pluralization, an array for indexed data interpolation, or a struct for named data interpolation (e.g. `1`, `["Hello", "World"]`, `{ name: "John" }`). |
-| i18n         | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n         | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

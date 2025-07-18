@@ -28,7 +28,7 @@ function i18n_get_asset_from_ref(
 | var_name    | String            |              | Variable name based on the `var_name` parameter used in [`i18n_create_ref_asset()`](/v1/api-reference/functions/i18n-create-ref-asset) function (e.g. `global.my_obj.my_spr`, `my_obj.my_spr`, `my_arr.0`, `my_struct.my_spr`, etc.). |
 | ref         | String \| Instance \| Object |              | Reference name or instance id based on the ref in [`i18n_create_ref_asset()`](/v1/api-reference/functions/i18n-create-ref-asset) function. Recommended to pass `"global"` if the reference is created in global variable, or instance `id` if the reference is created in an instance. |
 | locale      | String            | `""`         | The locale code to get the asset from. Leave it empty to get the asset from the **current locale**. |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

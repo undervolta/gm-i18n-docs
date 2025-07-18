@@ -8,13 +8,13 @@ This function can only be used after the [`i18n_create()`](/v1/api-reference/fun
 
 ::code-group
 ```js [Usage]
-i18n_message_exists(key, [locale], [i18n]);
+i18n_message_exists(key, locale, [i18n]);
 ```
 
 ```ts [Signature]
 function i18n_message_exists(
     key: string,
-    locale: string,                 // default = "" (use the current locale)
+    locale: string,
     i18n?: I18n | boolean           // default = false (using global i18n struct)
 ): boolean
 ```
@@ -25,8 +25,8 @@ function i18n_message_exists(
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
 | key         | String            |              | The message key to check (e.g. `hello`, `bye`, `long_text`, etc.). |
-| locale      | String            | `""`         | The locale code to check (e.g. `en`, `id`, `ja`, etc.). Leave it empty to check the message key in the **current locale**. |
-| i18n        | Boolean \| I18n | `false`      | The [`i18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
+| locale      | String            |              | The locale code to check (e.g. `en`, `id`, `ja`, etc.). Leave it empty to check the message key in the **current locale**. |
+| i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
 

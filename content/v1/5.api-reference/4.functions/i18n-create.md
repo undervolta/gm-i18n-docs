@@ -18,6 +18,7 @@ function i18n_create(
     default_locale: string,                     // default/fallback language code
     locales: I18nLocaleInit[],                  // array of `I18nLocaleInit` struct to initialize the available locales
     options?: boolean | {                       // default = false (no options)
+        cached?: boolean;                       // enable message caching, default = false
         debug?: boolean;                        // toggle debug mode, default = false
         default_message?: string;               // default message, default = ""
         hashed: boolean;                        // enable hashed message, default = true
@@ -30,8 +31,16 @@ function i18n_create(
 ): I18n
 ```
 
-```ts [Interface]
-interface I18n {
+```ts [Type]
+type I18n = {
+    cache: {
+        ids: integer[];
+        values: string[];
+        keys: string[];
+        data: any[];
+        locales: string[]
+    };
+    cached: boolean;                	// message caching
     data: {
         [locale_code: string]: {
             dictionaries: {
@@ -48,6 +57,7 @@ interface I18n {
     debug: boolean;                     // debug mode
     default_locale: string;             // default/fallback language
     default_message: string;            // default message
+    drawing_presets: I18nDrawings[];    // drawing presets in all locales (become undefined after all files are loaded and all fonts are converted)
     hashed: boolean;                    // enable hashed message
     linked_end: string;                 // linked message end delimiter
     linked_start: string;               // linked message start delimiter
