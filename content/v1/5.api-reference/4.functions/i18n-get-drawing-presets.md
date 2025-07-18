@@ -23,7 +23,7 @@ function i18n_get_drawing_presets(
 
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
-| locale      | String            | `""`         | The locale code to get the drawing preset(s) from (e.g. `en`, `id`, `ja`, etc.). Leave it empty to get the drawing preset(s) from the **current locale**. |
+| locale      | String            | `""`         | The locale code to get the drawing preset(s) from (e.g. `"en"`, `"id"`, `"ja"`, etc.). Leave it empty to get the drawing preset(s) from the **current locale**. |
 | i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns

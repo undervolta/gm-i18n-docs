@@ -24,7 +24,7 @@ function i18n_set_locale(
 
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
-| code        | String            |              | The locale code to switch to. |
+| code        | String            |              | The locale code to switch to (e.g. `"en"`, `"id"`, `"ja"`, etc.). |
 | update_refs | Boolean           | `true`       | Update all references (message and asset) to the new locale. |
 | i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 

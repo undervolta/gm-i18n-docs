@@ -32,7 +32,7 @@ function i18n_draw_message(
 | y           | Real              |              | The `y` position to draw the text (e.g. `room_height / 2`). |
 | text        | String            |              | The text to draw. You can pass a normal text, or a message key (start with `@:`) to draw a translated text (e.g. `"Hello World!"`, `my_text`, or `"@:hello"`). |
 | data        | Integer \| Any\[] | `undefined`  | The data to pass to the message [pluralization](/v1/usage/pluralization) (`Integer`) or [indexed interpolation](/v1/usage/interpolation) (`Any[]`). |
-| preset_name | String            | `""`         | The name of the drawing preset to use (e.g. `header`, `body`, `title`, etc.). Leave it empty to mark it as `dynamic` preset. |
+| preset_name | String            | `""`         | The name of the drawing preset to use (e.g. `"header"`, `"body"`, `"title"`, etc.). Leave it empty to mark it as `dynamic` preset. |
 | locale      | String            | `""`         | The locale code to use the drawing preset (and message key if the `text` parameter is a message key). Leave it empty if you don't want to use any drawing preset, or you want the message key to be static. |
 | i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 

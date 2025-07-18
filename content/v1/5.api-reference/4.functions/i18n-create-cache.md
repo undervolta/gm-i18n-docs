@@ -30,7 +30,7 @@ function i18n_create_cache(
 |-------------|-------------------|--------------|-------------|
 | key         | String            |              | The message key to create the cache for (e.g. `"hello"`, `"bye"`, `"long_text"`, etc.). |
 | data        | Integer \| Any\[] \| Struct | `undefined` | The data to pass to the message. You can pass an integer for pluralization, an array for indexed data interpolation, or a struct for named data interpolation (e.g. `1`, `["Hello", "World"]`, `{ name: "John" }`). |
-| locale      | String            | `""`         | The locale code to create the cache for (e.g. `en`, `id`, `ja`, etc.). Leave it empty to create the cache for the **current locale**. |
+| locale      | String            | `""`         | The locale code to create the cache for (e.g. `"en"`, `"id"`, `"ja"`, etc.). Leave it empty to create the cache for the **current locale**. |
 | value       | String            | `""`         | The value to store in the cache. Leave it empty to get the message from based on the `key` and `data` parameters. |
 | i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 

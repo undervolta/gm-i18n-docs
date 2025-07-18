@@ -24,8 +24,8 @@ function i18n_unload_messages(
 
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
-| file        | String \| String\[] |              | The file path(s) to unload the messages from (e.g. `~/langs/en.json`). Add `~/` before the file path to unload the file from the `working_directory`. You can pass a string for single file, or an array of string for multiple files (e.g. `["~/langs/en2.json", "~/langs/en1.json"]`). |
-| locale      | String            | `""`         | The locale code to unload the messages from (e.g. `en`, `id`, `ja`, etc.). Leave it empty to unload the messages from the **current locale**. |
+| file        | String \| String\[] |              | The file path(s) to unload the messages from (e.g. `"~/langs/en.json"`). Add `~/` before the file path to unload the file from the `working_directory`. You can pass a string for single file, or an array of string for multiple files (e.g. `["~/langs/en2.json", "~/langs/en1.json"]`). |
+| locale      | String            | `""`         | The locale code to unload the messages from (e.g. `"en"`, `"id"`, `"ja"`, etc.). Leave it empty to unload the messages from the **current locale**. |
 | i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns

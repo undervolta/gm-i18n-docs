@@ -24,7 +24,7 @@ function i18n_remove_messages(
 
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
-| key         | String \| String\[] |              | The message key(s) to remove (e.g. `hello`, `bye`, `long_text`, etc.). You can pass a string for single message, or an array of string for multiple messages (e.g. `["hello", "bye", "long_text"]`). |
+| key         | String \| String\[] |              | The message key(s) to remove (e.g. `"hello"`, `"bye"`, `"long_text"`, etc.). You can pass a string for single message, or an array of string for multiple messages (e.g. `["hello", "bye", "long_text"]`). |
 | locale      | String \| String\[] \| "all" | `""`         | The locale code(s) to remove the message from. You can pass a string for single locale, or an array of string for multiple locales (e.g. `["en", "id", "ja"]`). You can also pass `"all"` to remove the message from all locales. |
 | i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 

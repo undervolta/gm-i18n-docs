@@ -24,8 +24,8 @@ function i18n_message_exists(
 
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
-| key         | String            |              | The message key to check (e.g. `hello`, `bye`, `long_text`, etc.). |
-| locale      | String            |              | The locale code to check (e.g. `en`, `id`, `ja`, etc.). Leave it empty to check the message key in the **current locale**. |
+| key         | String            |              | The message key to check (e.g. `"hello"`, `"bye"`, `"long_text"`, etc.). |
+| locale      | String            |              | The locale code to check (e.g. `"en"`, `"id"`, `"ja"`, etc.). Leave it empty to check the message key in the **current locale**. |
 | i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns

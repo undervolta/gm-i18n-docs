@@ -26,7 +26,7 @@ function i18n_add_messages(
 
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
-| locale      | String            |              | The locale to add the messages to (e.g. `en`, `id`, `ja`, etc.). |
+| locale      | String            |              | The locale to add the messages to (e.g. `"en"`, `"id"`, `"ja"`, etc.). |
 | data        | Struct            |              | The messages to add. The `key` is the message key, and the `value` is the message value (e.g. `{ hello: "Hello World!" }`). |
 | i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 

@@ -16,7 +16,7 @@ function i18n_use_drawing(
     preset_name: string,
     locale?: string,                // default = "" (use the current locale)
     i18n?: I18n | boolean           // default = false (using global i18n struct)
-): void
+): I18nDrawings | void
 ```
 ::
 
@@ -24,8 +24,8 @@ function i18n_use_drawing(
 
 | Name        | Type              | Default      | Description |
 |-------------|-------------------|--------------|-------------|
-| preset_name | String            |              | The name of the drawing preset to use (e.g. `header`, `body`, `title`, etc.). |
-| locale      | String            | `""`         | The locale code to use the drawing preset (e.g. `en`, `id`, `ja`, etc.). Leave it empty to mark it as `dynamic` locale. |
+| preset_name | String            |              | The name of the drawing preset to use (e.g. `"header"`, `"body"`, `"title"`, etc.). |
+| locale      | String            | `""`         | The locale code to use the drawing preset (e.g. `"en"`, `"id"`, `"ja"`, etc.). Leave it empty to mark it as `dynamic` locale. |
 | i18n        | Boolean \| I18n | `false`      | The [`I18n`](/v1/api-reference/functions/i18n-create) struct reference, or leave it empty to use the `global` i18n struct. |
 
 ## Returns
