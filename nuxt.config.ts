@@ -4,9 +4,8 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 
 	modules: [
-		// Remove it if you don't use Plausible analytics
 		// https://github.com/nuxt-modules/plausible
-		'@nuxtjs/plausible'
+		// '@nuxtjs/plausible'
 	],
 	compatibilityDate: '2024-10-24',
 	typescript: {
