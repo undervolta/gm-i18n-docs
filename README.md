@@ -2,6 +2,9 @@
 
 Welcome to the **GM-I18n** documentation project! This project uses [Docus](https://www.docus.dev/) to generate cool documentation for the **GM-I18n** library.
 
+> [!IMPORTANT]
+> This project is archived due to the author no longer using GameMaker and has no plans for further development.
+
 ## 🚀 Contributing
 
 We welcome contributions! Follow this guide to set up the development environment using **Bun runtime** for optimal performance.
